@@ -36,5 +36,5 @@ body {
   }
 
 #mainHeader {
-    
+    user-select:none;
 }
