@@ -25,11 +25,82 @@ body {
   padding:1vw;
   border-radius:7px;
   background-color:white;
-  
+  margin-bottom:1vw;
+}
+ 
+
+
+/* CSS */
+.button-link {
+  background-color: hsl(334, 19%, 48%);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 42%;
+  height:9%;
 }
 
+.button-link:after {
+  background-clip: padding-box;
+  background-color: hsl(335, 57%, 75%);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-link,
+.button-link:focus {
+  user-select: auto;
+}
+
+.button-link:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-link:disabled {
+  cursor: auto;
+}
+
+.button-link:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+
+
+
 .container-2 {
-  border-radius:.25rem;
+  padding-right:65px;
 }
 
 #selfie {
@@ -138,27 +209,102 @@ body {
   }
 
   #backButton {
-    appearance: none;
-    background-color:hsl(335, 57%, 75%);
-    border-radius: 10px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#c07b98 0 -3px 0 inset;
+    background-color: hsl(334, 19%, 48%);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
     box-sizing: border-box;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#c07b98 0 -3px 0 inset;
     color: #36395A;
     cursor: pointer;
-    font-family: "JetBrains Mono",monospace;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:600;
+    margin:0;
     height: 48px;
     width:135px;
     line-height: 1;
     list-style: none;
-    padding-left: 16px;
-    padding-right: 16px;
     position:absolute;
     right:2%;
     top:3%;
     text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
     font-size: 18px;
+    overflow:visible;
+    outline:none;
+  }
+
+  .button-link {
+    background-color: hsl(334, 19%, 48%);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 42%;
+    height:9%;
   }
   
+  #backButton:after {
+    background-clip: padding-box;
+    background-color: hsl(335, 57%, 75%);
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  #backButton,
+  #backButton:focus {
+    user-select: auto;
+  }
+  
+  #backButton:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  #backButton:disabled {
+    cursor: auto;
+  }
+  
+  #backButton:active {
+    border-width: 4px 0 0;
+    background: none;
+  }
